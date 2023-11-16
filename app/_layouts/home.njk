@@ -35,43 +35,43 @@
     {% elif eleventyNavigation.key == options.homeKey %}
 
     <div class="govuk-grid-column-full">
-      <h2 class="govuk-heading-l govuk-!-font-size-27">Learn more</h2>
+      <h2 class="govuk-heading-l">Teams</h2>
     </div>
     
     <div class="govuk-grid-column-full">
       <section class="grid--cards govuk-!-margin-bottom-6">
-    {% for item in collections.learn | reverse %}    
         <div class="card">
-        <a href="{{ item.url | url | pretty }}">
+        <a href="https://funding-service-design-history.netlify.app/">
           <div class="card-text-header">
             <div class="card--text-header-container">
               <h2 class="govuk-heading-m">
-              {{ item.data.title }}
+              Funding service design
               </h2>
             </div>
           </div>
               <div class="card-container">
-              <p>{{ item.data.description }}</p>           
+              <p>Transforming how the department delivers funding</p>           
             </div>
             </a>
         </div>
-    {% endfor %}
-      </section>
-      </div>
 
-      <div class="govuk-grid-column-full">
-        <h2 class="govuk-heading-l govuk-!-font-size-27">
-          {{ sections.title or app.sections.title or "Sections" }}
-        </h2>
-      </div>
-      {% for item in collections.post | eleventyNavigation(options.homeKey) %}
-        <section class="govuk-grid-column-one-half govuk-!-margin-bottom-6">
-          <h3 class="govuk-heading-m govuk-!-margin-bottom-1">
-            <a href="{{ item.url | url | pretty }}">{{ item.title }}</a>
-          </h3>
-          <p class="govuk-body">{{ item.excerpt }}</p>
-        </section>
-      {% endfor %}
+      <div class="card">
+        <a href="https://design-history.planning-data.dev/">
+          <div class="card-text-header">
+            <div class="card--text-header-container">
+              <h2 class="govuk-heading-m">
+              Planning data service
+              </h2>
+            </div>
+          </div>
+              <div class="card-container">
+              <p>A permanent record of how our service has developed over time</p>           
+            </div>
+            </a>
+        </div>
+
+      </section>
+    </div>
     {% endif %}
   </div>
 {% endblock %}

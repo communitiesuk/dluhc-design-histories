@@ -10,23 +10,23 @@ module.exports = function (eleventyConfig) {
     header: {
       organisationLogo: false,
       organisationName: 'DLUHC',
-      productName: 'Funding Service Design',
-      search: {
-        label: 'Search',
-        indexPath: '/search.json',
-        sitemapPath: '/sitemap'
-      }
+      productName: 'Design histories',
+      // search: {
+      //   label: 'Search',
+      //   indexPath: '/search.json',
+      //   sitemapPath: '/sitemap'
+      // }
     },
-    footer: {
-      meta: {
-        items: [
-          {
-            href: "https://fsd-pre-award.herokuapp.com/",
-            text: "Access Funding Prototype History"
-          }
-        ]
-      }
-    }
+    // footer: {
+    //   meta: {
+    //     items: [
+    //       {
+    //         href: "https://fsd-pre-award.herokuapp.com/",
+    //         text: "Access Funding Prototype History"
+    //       }
+    //     ]
+    //   }
+    // }
   })
 
   // Passthrough
